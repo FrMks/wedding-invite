@@ -25,47 +25,22 @@ function App() {
   }, []);
 
   return (
-    // Высота и ширина 100%
-    // Красный фон
-    // Гибкий макет
-    // Элементы вертикально
-    // Горизонтальное центрирование
-    // Вертикальное центрирование
-    // Белый текст
-    // Скрывает контент за границами div
-    // Нет боковых отступов
     <div className="
         h-screen
         w-screen
-        bg-[#991B1B]
         flex
         flex-col
         items-center
         justify-center
-        text-white
-        overflow-hidden px-0">
+        overflow-hidden px-0 gap-8">
       <h1 className="
-        text-4xl
-        sm:text-5xl
-        md:text-6xl
-        lg:text-7xl
-        font-bold
-        mb-4
-        sm:mb-8
-        text-center
-        drop-shadow-lg
-        px-2 
-        sm:px-4
-        md:px-8
+        text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+        text-white
+        font-bold text-center
+        px-2 sm:px-4 md:px-8
         flex-shrink-0">
         Пригласительное на свадьбу
       </h1>
-      <p className="
-        text-lg sm:text-xl md:text-2xl lg:text-3xl
-        text-center max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl
-        drop-shadow-md px-4 md:px-8 flex-1 leading-relaxed">
-        Здесь будет дата, место и детали... (добавьте много текста — скролл не появится)
-      </p>
     </div>
   )
 }
