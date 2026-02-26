@@ -25,6 +25,10 @@ function App() {
       alignItems: 'center',
       overflowY: 'auto',
       gap: '32px',
+      backgroundImage: 'url(/wedding.JPG',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
     }}>
       <h1 style={{
         fontSize: 'clamp(2rem, 5vw, 4.5rem)',
