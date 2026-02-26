@@ -7,6 +7,8 @@ function App() {
     document.body.style.padding = '0';
     document.body.style.backgroundColor = '#480607';
     document.documentElement.style.height = '100%';
+    document.body.style.overflowX = 'hidden';
+    document.documentElement.style.overflowX = 'hidden';
 
     return () => {
       document.body.style.margin = '';
@@ -24,6 +26,7 @@ function App() {
       flexDirection: 'column',
       alignItems: 'center',
       overflowY: 'auto',
+      overflowX: 'hidden',
       gap: '32px',
       backgroundImage: 'url(/wedding.JPG',
       backgroundSize: 'cover',
