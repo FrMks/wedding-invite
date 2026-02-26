@@ -3,20 +3,25 @@ import './App.css'
 
 function App() {
   useEffect(() => {
-    document.body.style.margin = '0';
-    document.body.style.padding = '0';
-    document.body.style.backgroundColor = '#480607';
-    document.documentElement.style.height = '100%';
-    document.body.style.overflowX = 'hidden';
-    document.documentElement.style.overflowX = 'hidden';
+  document.body.style.margin = '0';
+  document.body.style.padding = '0';
+  document.body.style.backgroundColor = '#480607';
+  document.body.style.overflowX = 'hidden';
+  document.body.style.overflowY = 'auto';  // скролл на body
+  document.documentElement.style.overflowX = 'hidden';
+  document.documentElement.style.overflowY = 'auto';
 
-    return () => {
-      document.body.style.margin = '';
-      document.body.style.padding = '';
-      document.body.style.backgroundColor = '';
-      document.documentElement.style.height = '';
-    };
-  }, []);
+  return () => {
+    document.body.style.margin = '';
+    document.body.style.padding = '';
+    document.body.style.backgroundColor = '';
+    document.body.style.overflowX = '';
+    document.body.style.overflowY = '';
+    document.documentElement.style.overflowX = '';
+    document.documentElement.style.overflowY = '';
+  };
+}, []);
+
 
   return (
     <div style={{
@@ -25,13 +30,8 @@ function App() {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      overflowY: 'auto',
       overflowX: 'hidden',
       gap: '32px',
-      backgroundImage: 'url(/wedding.JPG',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
     }}>
       <h1 style={{
         fontSize: 'clamp(2rem, 5vw, 4.5rem)',
@@ -42,9 +42,23 @@ function App() {
         width: '100%',
         margin: 0,
       }}>
-        Пригласительное на свадьбу
+        Максим & Лиза
       </h1>
-      <p style={{ color: 'white', fontSize: '1.2rem', lineHeight: '1.6'}}>Дорогие друзья</p>
+
+      <p style={{ color: 'white', fontSize: '1.2rem', lineHeight: '1.6' }}>
+        Дорогие друзья
+      </p>
+
+      <img
+        src="/wedding.JPG"
+        alt="Максим и Лиза"
+        style={{
+          width: '100%',
+          maxWidth: '600px',
+          height: 'auto',
+          display: 'block',
+        }}
+      />
     </div>
   )
 }
