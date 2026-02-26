@@ -33,32 +33,44 @@ function App() {
       overflowX: 'hidden',
       gap: '32px',
     }}>
-      <h1 style={{
-        fontSize: 'clamp(2rem, 5vw, 4.5rem)',
-        color: 'white',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        flexShrink: 0,
+
+      {/* Блок: изображение + текст поверх */}
+      <div style={{
+        position: 'relative',
         width: '100%',
-        margin: 0,
+        maxWidth: '600px',
       }}>
-        Максим & Лиза
-      </h1>
+        <img
+          src="/wedding.JPG"
+          alt="Максим и Лиза"
+          style={{
+            width: '100%',
+            height: 'auto',
+            display: 'block',
+          }}
+        />
 
-      <p style={{ color: 'white', fontSize: '1.2rem', lineHeight: '1.6' }}>
-        Дорогие друзья
-      </p>
-
-      <img
-        src="/wedding.JPG"
-        alt="Максим и Лиза"
-        style={{
+        {/* Текст поверх изображения */}
+        <div style={{
+          position: 'absolute',
+          top: '20px',
           width: '100%',
-          maxWidth: '600px',
-          height: 'auto',
-          display: 'block',
-        }}
-      />
+          textAlign: 'center',
+        }}>
+          <h1 style={{
+            fontSize: 'clamp(2rem, 5vw, 4.5rem)',
+            color: 'white',
+            fontWeight: 'bold',
+            margin: 0,
+          }}>
+            Максим & Лиза
+          </h1>
+          <p style={{ color: 'white', fontSize: '1.2rem', lineHeight: '1.6', margin: 0 }}>
+            Дорогие друзья
+          </p>
+        </div>
+      </div>
+
     </div>
   )
 }
