@@ -42,7 +42,7 @@ function App() {
       }}>
         <img
           src="/wedding.JPG"
-          alt="Максим и Лиза"
+          alt="Максим и Елизавета"
           style={{
             width: '100%',
             height: 'auto',
@@ -58,12 +58,13 @@ function App() {
           textAlign: 'center',
         }}>
           <h1 style={{
+            fontFamily: "'Marck Script', cursive",
             fontSize: 'clamp(2rem, 5vw, 4.5rem)',
             color: 'white',
             fontWeight: 'bold',
             margin: 0,
           }}>
-            Максим & Лиза
+            Максим & Елизавета
           </h1>
           <p style={{ color: 'white', fontSize: '1.2rem', lineHeight: '1.6', margin: 0 }}>
             Дорогие друзья
