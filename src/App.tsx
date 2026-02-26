@@ -31,12 +31,12 @@ function App() {
         flex
         flex-col
         items-center
-        justify-center
+        justify-start
         overflow-hidden px-0 gap-8">
       <h1 className="
         text-4xl sm:text-5xl md:text-6xl lg:text-7xl
         text-white
-        font-bold text-center
+        font-bold text-left
         px-2 sm:px-4 md:px-8
         flex-shrink-0">
         Пригласительное на свадьбу
