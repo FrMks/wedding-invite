@@ -60,8 +60,8 @@ function App() {
           <h1 style={{
             fontFamily: "'Marck Script', cursive",
             fontSize: 'clamp(2rem, 5vw, 4.5rem)',
-            color: 'white',
-            fontWeight: 'bold',
+            color: '#480607',
+            fontWeight: 'normal',
             margin: 0,
           }}>
             Максим & Елизавета
